@@ -1,0 +1,384 @@
+/*external font family */
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.top-header {
+  background-color: rgb(17, 13, 13);
+  padding: 12px 10%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 15px;
+}
+
+.top-contact a {
+  color: white;
+  background-color: rgb(214, 148, 25);
+  padding: 12px 30px;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+
+.top-contact a:hover {
+  background-color: green;
+}
+
+/*---------------HEADER----------------*/
+
+header {
+  padding: 5px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav li {
+  list-style: none;
+  position: relative;
+}
+
+header nav li a {
+  color: rgb(93, 88, 88);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* move icon from text*/
+
+header nav li a i {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+/* HOVER EFFECT*/
+
+header nav li a:hover,
+.active {
+  color: black;
+  transition: all 0.6s ease;
+}
+
+/* nav li .active {
+  color: black;
+} */
+
+/*how to create dropdown link */
+
+.dropdown {
+  position: absolute;
+  top: 20px;
+  min-width: 50px;
+  border: 2px solid #ccc;
+  background-color: rgba(255, 255, 255);
+  display: none;
+}
+
+.dropdown li {
+  padding: 12px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.dropdown li a {
+  padding: 0 20px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.dropdown li:hover {
+  background-color: orange;
+  transition: all 0.7s linear;
+}
+
+.dropdown li:hover a {
+  color: black;
+}
+
+/*display dropdown*/
+
+header nav li:hover .dropdown {
+  display: block;
+  transition: all 2s ease-in-out;
+}
+
+/*------logo image-----*/
+
+/* 
+header .logo img {
+  width: 200PX;
+}
+ */
+
+/*############## online portal ❤ ####################*/
+.portal-btn {
+  position: relative;
+}
+.dropdown-portal {
+  position: absolute;
+  top: 10px;
+  /* left: 184px; */
+  right: -165px;
+  min-width: 50px;
+  border: 2px solid #ccc;
+  background-color: rgba(255, 255, 255);
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.portal-btn:hover .dropdown-portal {
+  display: block;
+}
+
+/*--------hero-----*/
+.hero {
+  margin-bottom: 0;
+}
+.hero img {
+  width: 100%;
+  height: 600px;
+}
+
+/*----about school section*/
+
+.about-school {
+  display: flex;
+  gap: 30px;
+  padding: 0px 10%;
+}
+
+.about-school .left {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+/* card */
+.about-school .left .card {
+  width: 320px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-bottom: 5px solid rgb(7, 203, 238);
+  border-top: 0;
+  padding: 30px;
+  /*move content to center*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-school .left .card i {
+  color: rgb(245, 176, 48);
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+/* h2 - tiile */
+.about-school .left .card .title {
+  color: rgb(116, 112, 112);
+  margin-bottom: 20px;
+}
+
+/* p - paragraph */
+.about-school .left .card p {
+  color: rgb(116, 112, 112);
+  font-size: 18px;
+  text-align: center;
+}
+
+/* .right container */
+
+.about-school .right {
+  background-color: rgb(7, 203, 238);
+  flex: 1; /*1 rep 1 fraction*/
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+
+  color: white;
+  font-weight: 600;
+
+  align-self: flex-start;
+}
+
+.about-school .right i {
+  font-size: 50px;
+}
+
+.about-school .right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/*school details*/
+
+#school-details {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  display: flex;
+  gap: 30px;
+  padding: 0 10%;
+}
+
+/* left */
+#school-details .left {
+  flex: 1;
+  padding: 10px;
+  border: 0px solid #000;
+}
+
+#school-details .left h2,
+#school-details .right h2 {
+  color: rgb(7, 203, 238);
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#school-details .left p {
+  color: rgb(116, 112, 112);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#school-details .left small a {
+  color: rgb(116, 112, 112);
+  font-size: 16px;
+} /* end left */
+
+/*center*/
+
+#school-details .center {
+  width: 40%;
+  border: 0px solid #000;
+
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+
+  position: relative;
+}
+
+#school-details .center .img-2 {
+  margin-top: 70px;
+}
+
+#school-details .center img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+#school-details .center .img-2 img {
+  width: 170px;
+  height: 170px;
+}
+
+/*-------join us------*/
+
+#school-details .center .join-us {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100%;
+
+  transform: translateX(-50%);
+  background-color: rgb(8, 93, 46);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#school-details .center .join-us h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#school-details .center .join-us a {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*right*/
+
+#school-details .right {
+  flex: 1;
+  border: 0px solid #000;
+}
+
+#school-details .right h2 {
+  font-size: 16px;
+  text-align: left;
+}
+
+#school-details .right p {
+  color: rgb(7, 203, 238);
+  font-size: 16x;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#school-details .right iframe {
+  width: 100%;
+  height: 180px;
+}
+
+/*############### associatiate ###############*/
+
+.associatiate {
+  padding: 12px 10%;
+}
+
+.associatiate img {
+  width: 100%;
+  height: 150px;
+}
+
+/*footer*/
+
+footer {
+  background-color: rgb(17, 13, 13);
+  padding: 20px 10%;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+footer small {
+  color: rgb(7, 203, 238);
+}
